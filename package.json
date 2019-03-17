@@ -1,0 +1,69 @@
+{
+  "name": "react-drag-drawer",
+  "version": "3.3.0",
+  "description": "Draggable react drawer",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server",
+    "prepublishOnly": "npm run build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "emotion": "~9.1.2",
+    "global": "~4.3.2",
+    "intersection-observer": "~0.5.0",
+    "prop-types": "~15.6.1",
+    "react-intersection-observer": "~3.0.3",
+    "react-motion": "~0.5.2"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "husky": "^1.1.0",
+    "nwb": "0.21.x",
+    "prettier": "^1.14.3",
+    "pretty-quick": "^1.7.0",
+    "react": "~16.2.0",
+    "react-dom": "~16.2.0",
+    "react-github-badge": "~0.4.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanford/react-drag-drawer.git"
+  },
+  "homepage": "https://github.com/hanford/react-drag-drawer",
+  "bugs": "https://github.com/hanford/react-drag-drawer/issues",
+  "authors": [
+    "Jack Hanford"
+  ],
+  "tags": [
+    "react",
+    "drawer",
+    "draggable",
+    "drag drawer"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "drawer",
+    "draggable"
+  ]
+}
